@@ -1,0 +1,31 @@
+{
+  "name": "sword-heart",
+  "version": "v0.0.1",
+  "code": "sword-heart",
+  "pageList": [
+    {
+      "pageName": "登录",
+      "pagePath": "/login.htm",
+      "isLogin": false,
+      "component": "Login"
+    },
+    {
+      "pageName": "首页",
+      "pagePath": "/",
+      "component": "Home"
+    },
+    {
+      "pageName": "首页",
+      "pagePath": "/index.htm",
+      "component": "Home"
+    },
+    {
+      "pageName": "404",
+      "pagePath": "/404.htm"
+    },
+    {
+      "pageName": "unauthorized",
+      "pagePath": "/unauthorized.htm"
+    }
+  ]
+}

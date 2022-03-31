@@ -1,0 +1,65 @@
+@import '~antd/lib/style/themes/default.less';
+@import './antd.theme.less'; // 用于覆盖上面定义的变量
+
+.dotdot(@line) {
+  display: box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: @line; // 多行显示
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.oneLine {
+  .dotdot(1);
+}
+
+.twoLine {
+  .dotdot(2);
+}
+
+.threeLine {
+  .dotdot(3);
+}
+
+.input {
+  border: none;
+  padding: 0 2.6667vw; // 10
+  width: 100%;
+  background-color: #fff;
+  outline: none;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0%);
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.flexLayout(@display: flex, @direction: row, @jc: center, @ai: center) {
+  display: @display;
+  flex-direction: @direction;
+  justify-content: @jc;
+  align-items: @ai;
+}
+
+.flexCenter {
+  .flexLayout(flex, column, center, center);
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.base_card {
+  border-radius: 2px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 13px 0 rgba(228, 228, 228, 60%);
+}
